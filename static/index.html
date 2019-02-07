@@ -2,19 +2,12 @@
 
 <html>
 <head>
-	<title>HCI Project Portfolio</title>	
+	<title>A5 - Schnip Main Screen Wireframe</title>	
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
-	<link href="css/a5skeleton.css" rel="stylesheet">
-	<script src="https://code.jquery.com/jquery.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+	<link href="css/a5screen2.css" rel="stylesheet">
 	<script src="js/a5.js"></script>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	
 
 
@@ -25,160 +18,95 @@
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-  <![endif]-->        
+  <![endif]-->   
+
 </head>
 
 <body>
-	<div class="container">
-		<!-- h1 through h6 are headers. The higher the number, the smaller the header -->
-		<!-- p means paragraph -->
-		<div class="dropdown">
-			<h1>SCHNIP</h1>
-			<button id="menu" class="btn btn-default btn-sl">Menu</button>
-			<div class="dropdown-content">
-				<div>
-					<a href="preferences.html">Preferences</a>
-				</div>
-				<div>
-					<a href="account.html">Account</a>
-				</div>
-				<div>
-					<form action="/action_page.php">
-						<input type="checkbox" name="tooptipon" value="">Tool tips
-						<br>
-					</form>
-				</div>
-				<div>
-					<form action="/action_page.php">
-						<input type="checkbox" name="locationon" value="">Location
-						<br>
-					</form>
-				</div>
-				<div>
-					<form action="/action_page.php">
-						<input type="checkbox" name="Notificationon" value="">Notifications
-						<br>
-					</form>
-				</div>
-				<div>
-					<a href="addcard.html">Add Loyalty Card</a>
-				</div>
-				<div>
-					<button id="Sign Out" class="btn btn-default btn-sl">Sign Out</button>
-				</div>
-			</div>
+		<div align="center" style="border:0px; padding:0px;" height="814px" width="377px">
+		
+			<!-- TOP -->
+			<div class="top_container">
+			<img src ="images/screen1_top.jpg" width="348" height="44" alt="Top Screen" usemap="#topmap">
+				<map name="topmap">
+					
+					<!-- SETTINGS DROPDOWN -->
+					<div class="dropdown">
+						<area shape="rect" coords="8,6,39,39" href="">
+							<div class="dropdown-content">
+							
+									<a href="preferences.html">Preferences</a>
+									
+									<a href="account.html">Account</a>
+									<br>
+									
+									<form action="/action_page.php">
+										<input type="checkbox" name="tooptipon" value="">Tool tips
+									<br>
+									<br>
+									</form>
+
+									<form action="/action_page.php">
+										<input type="checkbox" name="locationon" value="">Location
+									<br>
+									<br>
+									</form>
+			
+									<form action="/action_page.php">
+										<input type="checkbox" name="Notificationon" value="">Notifications
+									<br>
+									<br>
+									</form>
+				
+									<a href="addcard.html">Add Loyalty Card</a>
+									
+									<a href="signout.html">Sign Out</a>
+							</div>
+					</div>
+				</map>
+		</div>
+		
+		<!-- Location detection -->
+		<div id='hideOnClick'>
+			<img id="hideOnClick" src ="images/at_ralphs.jpg" id="imgClickAndChange" width="348" height="99" alt="At Ralphs?" usemap="#locationmap">
+			<map name="locationmap">
+				<area shape="rect" coords="220,69,272,91" href="ralph.html">
+				<area id="hide" shape="rect" coords="286,69,337,91" onclick="changeImage()" href="#">
+				
+				<!--<button id="hide" class="btn btn-default btn-sl">Yes</button>-->
+			</map>
+		</div>
+		
+		
+		<!-- Middle -->
+		<div>
+			<img src ="images/screen1_mid.jpg" width="348" height="540" alt="Mid Screen1" usemap="#midmap">
+			<map name="midmap">
+				<area shape="rect" coords="2,2,173,76" href="ralph.html">
+				<area shape="rect" coords="2,80,173,155" href="99ranch.html">
+				<area shape="rect" coords="2,158,173,233" href="walmart.html">
+				<area shape="rect" coords="2,237,173,311" href="sprouts.html">
+				<area shape="rect" coords="2,314,173,389" href="vons.html">
+				<area shape="rect" coords="2,392,173,467" href="costco.html">
+				<area shape="rect" coords="2,470,173,539" href="cvs.html">
+				<area shape="rect" coords="176,2,347,76" href="traderjoes.html">
+				<area shape="rect" coords="176,80,347,155" href="zionmarket.html">
+				<area shape="rect" coords="176,158,347,233" href="albertsons.html">
+				<area shape="rect" coords="176,236,347,311" href="food4less.html">
+				<area shape="rect" coords="176,314,347,389" href="pavillions.html">
+				<area shape="rect" coords="176,392,347,467" href="wholefoods.html">
+				<area shape="rect" coords="176,470,347,539" href="northgate.html">
+			</map>
+		</div>
+		<!-- Bottom -->
+		<div>
+			<img src ="images/screen1_bot.jpg" width="348" height="50" alt="Bot Screen1" usemap="#botmap">
+			<map name="botmap">
+				<area shape="circle" coords="321, 24, 24" href="checkout.html">
+			</map>
 		</div>
 
-<div id='hideOnClick'>
-		<div class="row">
-			<div class="col-lg-6">
-
-				<h4>Are you shopping at
-					Ralphs
-				</h4>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-lg-6">
-				<h1>Ralphs</h1>
-			</div>
-			<div class="col-lg-6">
-				<button id="hide" class="btn btn-default btn-sl">Yes</button>
-
-				<!-- why isn't this second button working? -->
-				<button id="hide" class="btn btn-default btn-sl">No</button>
-			</div>
-		</div>
-</div>
-
-		<div id="nearby">
-			<h3>Nearby stores for 92122</h3>
-		</div>
-
-		<div class="row">
-			<div class="col-lg-6">
-				<div class="thumbnail">
-					<a href="ralph.html">
-						<h2>Ralphs</h2>
-					</a>
-				</div>
-				<div class="thumbnail">
-					<a href="99ranch.html">
-						<h2>99 Ranch</h2>
-					</a>
-				</div>
-				<div class="thumbnail">
-					<a href="walmart.html">
-						<h2>Walmart</h2>
-					</a>
-				</div>
-				<div class="thumbnail">
-					<a href="Sprouts.html">
-						<h2>Sprouts</h2>
-					</a>
-				</div>
-				<div class="thumbnail">
-					<a href="vons.html">
-						<h2>Vons</h2>
-					</a>
-				</div>
-				<div class="thumbnail">
-					<a href="Costco.html">
-						<h2>Costco</h2>
-					</a>
-				</div>
-				<div class="thumbnail">
-					<a href="cvs.html">
-						<h2>CVS</h2>
-					</a>
-				</div>
-
-			</div>
-			<div class="col-lg-6">
-				<div class="thumbnail">
-					<a href="traderjoes.html">
-						<h2>Trader Joe's</h2>
-					</a>
-				</div>
-				<div class="thumbnail">
-					<a href="zionmarket.html">
-						<h2>Zion Market</h2>
-					</a>
-				</div>
-				<div class="thumbnail">
-					<a href="albertsons.html">
-						<h2>Albertsons</h2>
-					</a>
-				</div>
-				<div class="thumbnail">
-					<a href="food4less.html">
-						<h2>Food4Less</h2>
-					</a>
-				</div>
-				<div class="thumbnail">
-					<a href="pavillions.html">
-						<h2>Pavillions</h2>
-					</a>
-				</div>
-				<div class="thumbnail">
-					<a href="wholefoods.html">
-						<h2>Wholefoods</h2>
-					</a>
-				</div>
-				<div class="thumbnail">
-					<a href="northgate.html">
-						<h2>Northgate</h2>
-					</a>
-				</div>
-
-				<p>
-					<button type="button" class="btn btn-default btn-lg">
-
-						<a href="cart.html"<span class="glyphicon glyphicon-shopping-cart"></span></a>
-					</button>
-				</p>
-			</div>
-		</div>
-</div>
+	</div>
 </body>
+
 </html>
