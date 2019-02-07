@@ -2,21 +2,12 @@
 
 <html>
 <head>
-	<title>HCI Project Portfolio</title>	
+	<title>Schnip - Vons Coupons</title>	
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
-	<link href="css/a5skeleton.css" rel="stylesheet">
-	<script src="https://code.jquery.com/jquery.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+	<link href="css/a5screen2.css" rel="stylesheet">
 	<script src="js/a5.js"></script>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 	<!-- this is a comment in HTML -->
 
@@ -25,63 +16,90 @@
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->        
+    <![endif]-->    
+	<style>
+		.top_container{
+			position: realative;
+			text-align: center;
+			color: black;
+		}
+
+		.store_text{
+			position: absolute;
+			font-size: 20px;
+			top: 65px;
+			left: 800px;
+		}
+	</style>
+	
 </head>
 
 <body>
-	<div class="container">
-		<h1>Vons</h1>
-	
-        <!--
-		<h4>Projects</h4>
-		 divs are invisible structuring elements that stack vertically by default. Use them to organize your code -->
-		<!-- img tags are images. Lorem Pixel will deliver random images; handy! -->
-		<!-- a are anchors, also known as hyperlinks. Use the href attribute to tell the browser where to go when the user clicks 
-	
-		<div id="project2">
-			<a href="project.html" class="thumbnail">
-				<p>Needfinding</p>
-			</a>
-		</div>
-		<div  id="project3">
-			<a href="project.html" class="thumbnail">
-				<img src="images/lorempixel.technics.1.jpeg" alt="Lorem Pixel image" class="img">
-				<p>Prototyping</p>
-			</a>
-		</div>
-		<div id="project4">
-			<a href="project.html" class="thumbnail">
-				<img src="images/lorempixel.abstract.1.jpeg" alt="Lorem Pixel image" class="img">
-				<p>Heuristic Evaluation</p>
-			</a>
-		</div>
-		<div  id="project5">
-			<a href="project.html" class="thumbnail">
-				<img src="images/lorempixel.abstract.8.jpeg" alt="Lorem Pixel image" class="img">
-				<p>Visualization</p>
-			</a>
-		</div>
-		<div  id="project6">
-			<a href="project.html" class="thumbnail">
-				<img src="images/lorempixel.people.2.jpeg" alt="Lorem Pixel image" class="img">
-				<p>Social design</p>
-			</a>
-		</div>
-		<div  id="project7">
-			<a href="project.html" class="thumbnail">
-				<img src="images/lorempixel.technics.2.jpeg" alt="Lorem Pixel image" class="img">
-				<p>Gestural interaction</p>
-			</a>
-		</div>
-		<div  id="project8">
-			<a href="project.html" class="thumbnail">
-				<img src="images/lorempixel.city.2.jpeg" alt="Lorem Pixel image" class="img">
-				<p>Design tools</p>
-			</a>
-		</div>
-	-->
+		<div align="center" height="814px" width="377px">
+		
+			<!-- TOP -->
+			<div class="top_container">
+			<div class="store_text">Vons Coupons</div>
+			<img src ="images/top.jpg" width="348" height="90" alt="Top Screen2" usemap="#topmap">
+				<map name="topmap">
+					
+					<!-- SETTINGS DROPDOWN -->
+					<div class="dropdown">
+						<area shape="rect" coords="8,6,39,39" href="">
+							<div class="dropdown-content">
+							
+									<a href="preferences.html">Preferences</a>
+									
+									<a href="account.html">Account</a>
+									<br>
+									
+									<form action="/action_page.php">
+										<input type="checkbox" name="tooptipon" value="">Tool tips
+									<br>
+									<br>
+									</form>
 
-	</div>
-
-</body>
+									<form action="/action_page.php">
+										<input type="checkbox" name="locationon" value="">Location
+									<br>
+									<br>
+									</form>
+			
+									<form action="/action_page.php">
+										<input type="checkbox" name="Notificationon" value="">Notifications
+									<br>
+									<br>
+									</form>
+				
+									<a href="addcard.html">Add Loyalty Card</a>
+									
+									<a href="signout.html">Sign Out</a>
+							</div>
+					</div>
+					
+					<!-- SORT MENU -->
+					<div class="dropdownn">
+						<area shape="rect" coords="252,56,527,82" href="">
+						<div class="dropdownn-content" style="right:0;">
+								<a href="#">Best Deals</a>
+								<a href="#">Expiring Soon</a>
+								<a href="#">Catagories</a>
+							</div>
+					</div>
+				</map>
+			</div>
+			
+			<!-- MIDDLE -->
+			<iframe src="coupon_test.html" style="border:none; padding:none; margin:none;" height="648" width="346"></iframe>
+			
+			<!-- BOTTOM -->
+			<div>
+			<img src ="images/bot_screen2.jpg" width="348" height="50" alt="Bot Screen2" usemap="#botmap">
+			<map name="botmap">
+				<area shape="rect" coords="11,12,48,41" href="index.html">
+				<area shape="circle" coords="321, 24, 24" href="checkout.html">
+			</map>
+			</div>
+		</div>
+		</body>
 </html>

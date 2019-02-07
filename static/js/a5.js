@@ -23,6 +23,15 @@ function initializePage() {
 	$('#hide').click(function(){
   		$('#hideOnClick').hide();
 	});
+	
+	function showMenu(menuId)  {
+		//hide all the menues
+		document.getElementById('menu1').style.display="none";
+		document.getElementById('menu2').style.display="none";
+
+		//display the menu for this area of the image
+		document.getElementById(menuId).style.display="block";
+		});
 
 /*function projectClick(e) {
 	console.log("Project clicked");
