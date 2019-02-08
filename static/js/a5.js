@@ -24,17 +24,6 @@ function initializePage() {
   		$('#hideOnClick').hide();
 	});
 	
-	function changeImage() {
-
-			if (document.getElementById("imgClickAndChange").src == "images/at_ralphs.jpg") 
-			{
-				document.getElementById("imgClickAndChange").src = "images/at_ralphs2.jpg";
-			}
-			else 
-			{
-				document.getElementById("imgClickAndChange").src = "images/at_ralphs.jpg";
-			}
-		}
 	
 	function showMenu(menuId)  {
 		//hide all the menues
