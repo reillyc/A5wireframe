@@ -24,7 +24,6 @@ function initializePage() {
   		$('#hideOnClick').hide();
 	});
 	
-	
 	function showMenu(menuId)  {
 		//hide all the menues
 		document.getElementById('menu1').style.display="none";
@@ -34,17 +33,6 @@ function initializePage() {
 		document.getElementById(menuId).style.display="block";
 		});
 
-/*function projectClick(e) {
-	console.log("Project clicked");
-	e.preventDefault();
-	$(this).css("background-color", "#7fff00");
-}	
-
-function projectClick(e) {
-	e.preventDefault();
-	$(this).css("background-color", "#7fff00");
-}
-*/
 function projectClick(e) {
 	e. preventDefault();
 	var containingProject = $(this).closest(".project");
@@ -58,16 +46,5 @@ function projectClick(e) {
 	//description.html("<p>Stop clicking on me! You just did it at" + (new Date()) + "</p>");
 }
   
-
 }
 
-
-
-//$('#myelement').click(changeText);
-//function changeText(event) {
-//	$(this).text("Changed text");
-//}
-
-	// Add any additional listeners here
-	// example: $("#div-id").click(functionToCall);
-}
