@@ -44,7 +44,14 @@ function projectClick(e) {
     } else {
     	$(".project-description").fadeOut();
 	//description.html("<p>Stop clicking on me! You just did it at" + (new Date()) + "</p>");
-}
+	}
   
 }
 
+const fs = require('fs');
+
+let rawdata = fs.readFileSync('login.json');
+let login = JSON.parse(rawdata);
+
+console.log(login.username);
+console.log(login.password);

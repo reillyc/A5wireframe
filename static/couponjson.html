@@ -1,0 +1,60 @@
+<!doctype html>
+
+<html>
+<head>
+	<title>Coupon Main Sort</title>	
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<script src="js/a5.js"></script>
+	<script src="js/coupon.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/data.json"> </script>
+
+	<script>
+	$(function() {
+
+
+	var data = [];
+
+	$.getJSON("data.json", function(data) {
+	$.each(data.coupons, function(i, f) {
+	var tblRow = "<tr>" + "<td>" + f.product + "</td>" +
+		"<td>" + f.brand + "</td>" + "<td>" + f.Deal + "</td>" + "<td>" + f.imageURL + "</td>" + "</tr>"
+		$(tblRow).appendTo("#coupon tbody");
+	});
+
+});
+
+});
+</script>
+
+</head>
+
+<body>
+	<div style="border:none; padding:none; margin:none;">
+<!--	
+	<img alt="" src="images/pizza_unpressed.jpg" 
+            style="height: 159px; width: 325px" id="pizza" onclick="pizzaChange();"  />
+	<img alt="" src="images/spam_unpressed.jpg" 
+            style="height: 159px; width: 325px" id="spam" onclick="spamChange();"  />
+	<img alt="" src="images/guac_unpressed.jpg" 
+            style="height: 159px; width: 325px" id="guac" onclick="guacChange();"  />
+	<img alt="" src="images/gran_unpressed.jpg" 
+	style="height: 159px; width: 325px" id="gran" onclick="granChange();"  /> -->
+	<table id= "coupon" border="2">
+		<thead>
+			<th>product</th>
+			<th>brand</th>
+			<th>deal</th>
+			<th>image</th>
+		</thead>
+		<tbody>
+
+		</tbody>
+	</table>	
+
+</div>
+</body>
+</html>

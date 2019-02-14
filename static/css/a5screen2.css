@@ -1,16 +1,39 @@
+
+/* Gets rid of all imposed margin, padding, and bordering by default*/
 * {
 margin: 0;
 padding: 0;
 border: 0;
 }
 
+p.arial{
+  margin: 5%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+/* Target application height for mobile devices*/
 .appbox {
   alignment-baseline: center;
   height: 882px; 
   width: 375px;
 }
 
+/* grey background box for login screen spacing*/
+.login{
+  background-color: #D3D3D3;
+  height: 643px; 
+  width: 348px;
+}
 
+/* grey background box for addcard screen spacing*/
+.addcard{
+  background-color: #D3D3D3;
+  height: 643px; 
+  width: 348px;
+}
+
+/* Button 1 rollover drop down*/
 .dropbtn {
   background-color: #4CAF50;
   color: white;
@@ -59,6 +82,10 @@ border: 0;
   background-color: #3e8e41;
 }
 
+/* Button 2 rollover drop down
+
+NOTE EXTRA 'n'
+*/
 .dropbtnn {
   background-color: #4CAF50;
   color: white;
@@ -106,6 +133,8 @@ border: 0;
   background-color: #3e8e41;
 }
 
+
+/* for dynamic text displaying */
 .top_container{
   position: realative;
   text-align: center;
@@ -117,4 +146,44 @@ border: 0;
   font-size: 20px;
   top: 58px;
   left: 24px;
+}
+
+
+/* Login form styles for Bootstrap 4 login */
+.login-container{
+    height: 350px; 
+    width: 348px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.login-form-1{
+    padding: 10%;
+}
+.login-form-1 h3{
+    text-align: center;
+    color: #333333;
+}
+
+.login-container form{
+    padding: 10%;
+}
+.btnSubmit
+{
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    border: none;
+    cursor: pointer;
+}
+.login-form-1 .btnSubmit{
+    font-weight: 600;
+    color: #ffffff;
+    border: 1px;
+    background-color: #000000;
+}
+.login-form-1 .ForgetPwd{
+    padding: 10%;
+    color: #000000;
+    font-weight: 600;
+    text-decoration: none;
 }
