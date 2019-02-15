@@ -1,2 +1,6 @@
 { "username": "janedoe",
-  "password": "pass123" }
+  "email": "janedoe@gmail.com",
+  "password": "pass123", 
+  "zip": 92023,
+  "totalsave": 0.0
+  }
